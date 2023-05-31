@@ -1,0 +1,36 @@
+{
+  "name": "sif-api",
+  "version": "1.0.0",
+  "description": "my one project for all of my future projects APIs",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "tsc",
+    "deploy": "tsc && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-pengi/sif-api.git"
+  },
+  "author": "dev-pengi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-pengi/sif-api/issues"
+  },
+  "homepage": "https://github.com/dev-pengi/sif-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.1.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-fileupload": "^1.4.0",
+    "http": "^0.0.1-security",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/express-fileupload": "^1.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
