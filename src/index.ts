@@ -10,6 +10,9 @@ import { Server } from "http";
 
 // Import routes
 import messageRoutes from "./routes/AiTalk";
+import * as cors from 'cors';
+
+
 
 // Import middleware
 import { notFound, errorHandler } from "./middlewares/errorHandler";
@@ -19,6 +22,7 @@ const { PORT } = process.env || 5050;
 const app: Express = express();
 
 // Configure Express application
+app.use(cors());
 app.use(fileUpload());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
